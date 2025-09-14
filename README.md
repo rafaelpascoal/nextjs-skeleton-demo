@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+An example project showcasing skeleton loading states built with [Next.js](https://nextjs.org/), [shadcn/ui](https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/).
 
-## Getting Started
+## 🚀 Tech Stack
 
-First, run the development server:
+- Framework: Next.js (App Router)
+- UI: shadcn/ui
+- Styling: Tailwind CSS
+- Language: TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠 Installation
+
+1. Clone the repository
+
+```Bash
+git clone https://github.com/rafaelpascoal/nextjs-skeleton-demo.git
+cd nextjs-skeleton-demo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```Bash
+npm install
+# or npm install / yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Install shadcn/ui
 
-## Learn More
+```Bash
+npx shadcn init
+```
 
-To learn more about Next.js, take a look at the following resources:
+3.1 Confirm the creation of the components/ui folder and config files.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.2 Add required components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```Powershell
+npx shadcn@latest add button skeleton
+```
 
-## Deploy on Vercel
+4. Run the development server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```Bash
+npm run dev
+# or npm run dev / yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✨ Features
+
+- ⏳ Skeleton loading component with reusable architecture
+- 🖼 Example page simulating data fetching with loading state
+- ⚡ Built with modern Next.js App Router and TypeScript
+- 🎨 Styled with Tailwind CSS and shadcn/ui components
+
+## 📦 Usage
+
+1. Start the dev server and visit the home page:
+
+```Powershell
+npm run dev
+# http://localhost:3000
+```
+
+2. You will see the UsersPage as the default homepage.
+
+3. While fetching data from /api/users, skeleton cards are displayed.
+
+4. After ~2s, the real user data replaces the skeletons.
+
+## 📸 Preview
+
+🔗 Live Demo: https://nextjs-skeleton-demo.vercel.app
+ (após deploy)
+
+## 🚀 Deployment
+
+- This project is optimized for deployment on Vercel.
+- Simply connect your GitHub repository and deploy with one click.
+
+## 📋 Project Checklist
+### Setup & Base
+
+- ✅ Initialize Next.js project (App Router)
+- ✅ Configure Git repository and GitHub remote
+- ✅ Install Tailwind CSS
+- ✅ Install shadcn/ui
+- ✅ Add reusable SkeletonCard component
+- ✅ Add mock API at /api/users
+- ✅ Set UsersPage as homepage
+
+### Features
+
+- ✅ Display Skeletons while data is loading
+- ✅ Fetch and render mock user data from API
+- ✅ Reusable component structure
+
+### Documentation
+
+- ✅ Add README with installation steps
+- ✅ Add usage examples
+- ✅ Add preview & deployment info
+
+### Deployment
+
+- ✅ Deploy to Vercel with live demo link
+
+## 📂 Project Structure
+
+```Bash
+src/
+ ├─ app/              # Next.js App Router structure
+ │   ├─ api/users     # Mock API routes
+ │   ├─ skeleton/     # Skeleton demo page
+ │   └─ users/        # Users page with fetch + skeleton
+ ├─ components/       # Reusable UI components
+ │   ├─ ui/           # shadcn/ui components (skeleton, button, avatar)
+ │   ├─ loading/      # SkeletonCard component
+ │   └─ users/        # UserCard component
+ └─ lib/              # Utils (e.g. cn)
+ ```
