@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
+// src/app/page.tsx
+// This is the home page
+
+import UsersPage from "./users/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <Button>Click me</Button>
-    </div>
+      <UsersPage />
   );
 }

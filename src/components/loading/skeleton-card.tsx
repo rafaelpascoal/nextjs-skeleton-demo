@@ -1,3 +1,6 @@
+// src/components/loading/skeleton-card.tsx
+// This is a component that shows a loading state with a skeleton card
+
 import { Skeleton } from "@/components/ui/skeleton";
 
 

@@ -1,3 +1,6 @@
+// src/app/skeleton/page.tsx
+// This is a page that shows a list of users with a loading state
+
 import SkeletonCard from "@/components/loading/skeleton-card";
 
 export default function SkeletonPage() {
